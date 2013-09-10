@@ -1,0 +1,56 @@
+[ 
+	{
+		"rank": 1,
+		"name": "Pittsburgh Grizzlies",
+		"data1": 50,
+		"data2": 84
+	},
+	{
+		"rank": 2,
+		"name": "Aalborg Pirates",
+		"data1": 47,
+		"data2": 82
+	},
+	{
+		"rank": 3,
+		"name": "Miami Ducks",
+		"data1": 46,
+		"data2": 78
+	},
+	{
+		"rank": 4,
+		"name": "Philadelphia Lions",
+		"data1": 43,
+		"data2": 75
+	},
+	{
+		"rank": 5,
+		"name": "Brooklyn Spartans",
+		"data1": 40,
+		"data2": 74
+	},
+	{
+		"rank": 6,
+		"name": "New Jersey Foxes",
+		"data1": 39,
+		"data2": 73
+	},
+	{
+		"rank": 7,
+		"name": "Wheeling Vipers",
+		"data1": 50,
+		"data2": 38
+	},
+	{
+		"rank": 8,
+		"name": "Columbus Bulldogs",
+		"data1": 37,
+		"data2": 71
+	},
+	{
+		"rank": 9,
+		"name": "Cleveland Wasps",
+		"data1": 36,
+		"data2": 68
+	}
+]
