@@ -4,13 +4,13 @@
 		<title>GiftCards.com - Schedule - Coding Assessment - Front End Developers</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/layout.css" rel="stylesheet">
 		
 		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -48,72 +48,74 @@
 			<div class="row">
 				<div class="span12">
 					<div style="padding:5px;">
-						<h1 id="Contact&Us">Contact Us</h1>
-						<table border="0" cellspacing="0" cellpadding="4" width="750">
-							<tr name="First Name Fields">
-								<td alt="First Name Field" width="150"><label>First Name</label></td>
-								<td width="450">
-									<input type="text" name="first-name" id="firstName" />
-								</td>
-							</tr>
-							<tr name="Last Name Fields">
-								<td alt="Last & Name Field" width="150"><label>Last Name</label></td>
-								<td width="450">
-									<input type="text" name="last-name" id="firstName" />
-								</td>
-							</tr>
-							<tr name="Address Fields">
-								<td alt="First Name Field" width="150"><label>Address 1</label></td>
-								<td width="450">
-									<input type="text" name="address" id="address" />
-								</td>
-							</tr>
-							<tr>
-								<td>Address Line 2</td>
-								<td>
-									<input type="text" name="first-name" />
-								</td>
-							</tr>
-							<tr>
-								<td>City</td>
-								<td>
-									<input type="text" name="first-name" />
-								</td>
-							</tr>
-							<tr>
-								<td>State</td>
-								<td>
-									<input type="text" name="first-name" />
-								</td>
-							</tr>
-							<tr>
-								<td>Zip Code</td>
-								<td>
-									<input type="text" name="first-name" />
-								</td>
-							</tr>
-							<tr>
-								<td>Phone Number</td>
-								<td>
-									<input type="text" name="first-name" />
-								</td>
-							</tr>
-							<tr>
-								<td>E-Mail Address</td>
-								<td>
-									<input type="text" name="first-name" />
-								</td>
-							</tr>
-							<tr>
-								<td valign="top">Comments</td>
-								<td>
-									<textarea name="comments" rows="8" style="width:600px;"></textarea>
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2"><input type="submit" value="Submit" /></td>
-							</tr>
-						</table>
+						<form method="post">
+							<h1 id="Contact&Us">Contact Us</h1>
+							<table border="0" cellspacing="0" cellpadding="4" width="750">
+								<tr name="First Name Fields">
+									<td alt="First Name Field" align="right" width="150"><label>First Name</label></td>
+									<td width="450">
+										<input type="text" name="first-name" id="first-name" />
+									</td>
+								</tr>
+								<tr name="Last Name Fields">
+									<td alt="Last & Name Field" align="right" width="150"><label>Last Name</label></td>
+									<td width="450">
+										<input type="text" name="last-name" id="last-name" />
+									</td>
+								</tr>
+								<tr name="Address Fields">
+									<td alt="Address Line 1 Field" align="right" width="150"><label>Address 1</label></td>
+									<td width="450">
+										<input type="text" name="address" id="address" />
+									</td>
+								</tr>
+								<tr name="Address 2 Fields">
+									<td alt="Address Line 2 Field" align="right" width="150"><label>Address 2</label></td>
+									<td width="450">
+										<input type="text" name="address2" id="address2" />
+									</td>
+								</tr>
+								<tr name="City Fields">
+									<td alt="City Field" align="right" width="150"><label>City</label></td>
+									<td width="450">
+										<input type="text" name="city" id="city" />
+									</td>
+								</tr>
+								<tr name="State Fields">
+									<td alt="State Field" align="right" width="150"><label>State</label></td>
+									<td width="450">
+										<input type="text" name="state" id="state" />
+									</td>
+								</tr>
+								<tr name="Zip Code Fields">
+									<td alt="Zip Code Field" align="right" width="150"><label>Zip Code</label></td>
+									<td width="450">
+										<input type="text" name="zip" id="zip" />
+									</td>
+								</tr>
+								<tr name="Phone Number Fields">
+									<td alt="Phone Number Field" align="right" width="150"><label>Phone Number</label></td>
+									<td width="450">
+										<input type="text" name="phone-number" id="phone-number" />
+									</td>
+								</tr>
+								<tr name="E-mail Fields">
+									<td alt="E-mail Field" align="right" width="150"><label>E-mail</label></td>
+									<td width="450">
+										<input type="text" name="e-mail" id="e-mail" />
+									</td>
+								</tr>
+								<tr name="Comments Fields">
+									<td align="right" valign="top"><label>Comments</label></td>
+									<td>
+										<textarea alt="Comments Field" name="comments" rows="8" style="width:600px;"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2"><input class="btn btn-success" type="submit" value="Submit" /></td>
+								</tr>
+							</table>
+						</form>
 					</div>
 				</div>
 			</div>

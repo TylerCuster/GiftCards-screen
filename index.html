@@ -4,13 +4,15 @@
 		<title>GiftCards.com - Coding Assessment - Front End Developers</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/layout.css" rel="stylesheet">
 		
-		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script> 
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<header>
@@ -50,7 +52,7 @@
 				</div>
 				<div class="span4 secondary-content">
 					<div id="next-game">
-						<h2>Next Game</h2>
+						<h2>NEXT GAME</h2>
 						<div style="text-align:center;">
 							<div><img src="images/home/grizzlies.png" /></div>
 							<div style="padding-top:10px;"><img src="images/home/pioneers.png" /></div>
@@ -59,38 +61,16 @@
 				</div>
 			</div>
 		</div>
-		<div class="container main-body">
+		<div ng-app="app" class="container main-body">
 			<div class="row">
 				<div class="span8">
-					<div id="news">
-						<h2>News</h2>
+					<div ng-controller="NewsController" id="news">
+						<h2>NEWS</h2>
 						<table class="table table-striped">
-							<thead>
-								<tr>
-									<th>Date</th>
-									<th>Information</th>
-								</tr>
-							</thead>
 							<tbody>
-								<tr>
-									<td>10/15/2013</td>
-									<td>Grizzlies forward Greg Barker out for season with undisclosed injury</td>
-								</tr>
-								<tr>
-									<td>10/12/2013</td>
-									<td>Grizzlies trade Jim Hunts to the Ottawa Swaggerbacks and pick up forward Greg Barker</td>
-								</tr>
-								<tr>
-									<td>09/05/2013</td>
-									<td>YouTube channel updated with tonight's game</td>
-								</tr>
-								<tr>
-									<td>09/05/2013</td>
-									<td>Grizzlies defenseman Yehuda Miller named league MVP for week</td>
-								</tr>
-								<tr>
-									<td>08/12/2013</td>
-									<td>Grizzlies resign forward Mike Schroeder to a 5 year deal</td>
+								<tr ng-repeat="story in news">
+									<td>{{ story.date }}</td>
+									<td>{{ story.headline }}</td>
 								</tr>
 							</tbody>
 						</table>
@@ -104,9 +84,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="span4" id="league-standings">
-					<h2>League Standings</h2>
-					Standings table should be here
+				<div ng-controller="StandingsController" class="span4" id="league-standings">
+					<h2>LEAGUE STANDINGS</h2>
+					<table class="table">
+						<tbody>
+							<tr ng-repeat="standing in standings">
+								<td>{{ standing.rank }}</td>
+								<td>{{ standing.name }}</td>
+								<td>({{ standing.data1 }})</td>
+								<td>{{ standing.data2 }}</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>

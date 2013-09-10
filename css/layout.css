@@ -7,7 +7,7 @@ ul {
 	list-style-type: none;
 }
 
-h1,h2{
+h1,h2,h3{
 	font-size:22px;
 	font-weight:normal;
 	padding-left:5px;
@@ -20,6 +20,11 @@ h1 {
 header, footer {
 	background-color:#17575c;
 	color:#fff;
+}
+
+table {
+	color: DimGray;
+	font-weight: bold;
 }
 
 .navigation-container {
@@ -80,11 +85,22 @@ header, footer {
 #next-game h2 {
 	background-color:#17575c;
 	color:#fff;
+	padding-left: 1em;
+	font-size: 1.3em;
 }
 
 #news h2 {
 	background-color:#6d3535;
 	color:#fff;
+	padding-left: 1em;
+	font-size: 1.3em;
+}
+
+#league-standings h2 {
+	background-color:#17575c;
+	color:#fff;
+	padding-left: 1em;
+	font-size: 1.3em;
 }
 
 footer ul {
@@ -92,12 +108,19 @@ footer ul {
 }
 footer li {
 	padding:5px;
-}
+}	
 
 footer .navigation-container {
 	padding-top:10px;
 }
 
 .team-members .player {
-	width:180px;
+	width: 180px;
+	height: 180px;
+	padding: 10px 10px 20px 0;
+}
+
+#sponsersText {
+	font-size: 2em;
+	margin-bottom: 2em;
 }
